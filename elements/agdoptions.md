@@ -4,10 +4,10 @@ Describes what data should be included in the downloaded AGD file.
 
 <table>
   <tr>
-    <td>Argument</td>
-    <td>Description</td>
-    <td>Required</td>
-    <td>Type</td>
+    <th>Argument</th>
+    <th>Description</th>
+    <th>Required</th>
+    <th>Type</th>
   </tr>
   <tr>
     <td>Axis</td>
