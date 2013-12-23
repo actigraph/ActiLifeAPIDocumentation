@@ -1,0 +1,40 @@
+## BoutData
+
+<table>
+  <tr>
+    <th>Element</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>BoutStartTicks</td>
+    <td>Array<long></td>
+  </tr>
+  <tr>
+    <td>BoutStopTicks</td>
+    <td>Array<long></td>
+  </tr>
+  <tr>
+    <td>BoutStartDateTimes</td>
+    <td>Array<DateTime></td>
+  </tr>
+  <tr>
+    <td>BoutStopDateTimes</td>
+    <td>Array<DateTime></td>
+  </tr>
+  <tr>
+    <td>TotalCounts</td>
+    <td>Array<double></td>
+  </tr>
+  <tr>
+    <td>BoutStdDeviations</td>
+    <td>Array<double></td>
+  </tr>
+  <tr>
+    <td>BoutLengths</td>
+    <td>Array<TimeSpan></td>
+  </tr>
+  <tr>
+    <td>BreakLengths</td>
+    <td>Array<TimeSpan></td>
+  </tr>
+</table>
