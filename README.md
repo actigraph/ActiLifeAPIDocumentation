@@ -69,16 +69,16 @@ Actions are sent to ActiLife to instruct it to either do something or return dat
 * [WirelessBurst [API 1.0]](actions/wirelessburst.md)
 * [WirelessIdentify [API 1.0]](actions/wirelessidentify.md)
 * [WirelessInitialize [API 1.2]](actions/wirelessinitialize.md)
-* [WirelessRealtimeStart [API 1.0]](actions/wirelressrealtimestart.md)
+* [WirelessRealtimeStart [API 1.0]](actions/wirelessrealtimestart.md)
 * [WirelessRealtimeStop [API 1.0]](actions/wirelessrealtimestop.md)
 * [WirelessStart [API 1.0]](actions/wirelessstart.md)
 * [WirelessStop [API 1.0]](actions/wirelessstop.md)
 
 ### Common Elements [A-Z]
 
-* [AGDOptions](arguments/agdoptions.md)
-* [BioData](arguments/biodata.md)
-* [InitOptions](arguments/initoptions.md)
+* [AGDOptions](elements/agdoptions.md)
+* [BioData](elements/biodata.md)
+* [InitOptions](elements/initoptions.md)
 
 ## Responses
 
