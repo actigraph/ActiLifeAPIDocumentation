@@ -4,162 +4,196 @@ Configures a device when initializing.
 
 <table>
   <tr>
-    <td>ARGUMENT</td>
-    <td>REQUIRED</td>
-    <td>TYPE</td>
+    <th>Argument</th>
+    <th>Description</th>
+    <th>Required</th>
+    <th>Type</th>
   </tr>
   <tr>
-    <td>SubjectName
-Caller defined (no restrictions on value).
-
-Notes:
-Max length of 255 characters for GT3X+ devices or newer.</td>
+    <td>SubjectName</td>
+    <td>Caller defined (no restrictions on value).
+        <p>Notes:</p>
+        <ul>
+            <li>Max length of 255 characters for GT3X+ devices or newer.</li>
+        </ul>
+    </td>
     <td>Yes</td>
     <td>string</td>
   </tr>
   <tr>
-    <td>StartDateTime
-Start time for the device to start recording.</td>
+    <td>StartDateTime</td>
+    <td>Start time for the device to start recording.</td>
     <td>No</td>
     <td>DateTime</td>
   </tr>
   <tr>
-    <td>StopDateTime
-Stop time for the device to stop recording.  Can be omitted to allow the device to continue recording indefinitely.</td>
+    <td>StopDateTime</td>
+    <td>Stop time for the device to stop recording.  Can be omitted to allow the device to continue recording indefinitely.</td>
     <td>No</td>
     <td>DateTime</td>
   </tr>
   <tr>
-    <td>SampleRate
-Sample rate to use.  Can be Hz value or epoch length in seconds.
-
-Notes:
-This depends on ability of device. Older devices are unable to handle multiple samples per second and use an epoch of the seconds.
-Accepted Hz values:
-30 (default)
-40
-50
-60
-70
-80
-90
-100</td>
+    <td>SampleRate</td>
+    <td>Sample rate to use.  Can be Hz value or epoch length in seconds.
+        <p>Notes:</p>
+        <ul>
+            <li>This depends on ability of device. Older devices are unable to handle multiple samples per second and use an epoch of the seconds.</li>
+        </ul>
+        <p>Accepted Hz values:</p>
+        <ul>
+            <li>30 (default)</li>
+            <li>40</li>
+            <li>50</li>
+            <li>60</li>
+            <li>70</li>
+            <li>80</li>
+            <li>90</li>
+            <li>100</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>int</td>
   </tr>
   <tr>
-    <td>Axis
-Amount of axis to enable while recording.  This is device dependant (GT3X+ and newer default to 3).
-
-Accepted values:
-1
-2
-3</td>
+    <td>Axis</td>
+    <td>Amount of axis to enable while recording.  This is device dependant (GT3X+ and newer default to 3).
+        <p>Accepted values:</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>int</td>
   </tr>
   <tr>
-    <td>Steps
-Whether to record steps during recording.
-
-Accepted values:
-false (default)
-true</td>
+    <td>Steps</td>
+    <td>Whether to record steps during recording.
+        <p>Accepted values:</p>
+        <ul>
+            <li>false (default)</li>
+            <li>true</li>
+        </ul>
     <td>No</td>
     <td>bool</td>
   </tr>
   <tr>
-    <td>Inclinometer
-Whether to record inclinometer changes during recording.
-
-Accepted values:
-false (default)
-true</td>
+    <td>Inclinometer</td>
+    <td>Whether to record inclinometer changes during recording.
+        <p>Accepted values:</p>
+        <ul>
+            <li>false (default)</li>
+            <li>true</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>bool</td>
   </tr>
   <tr>
-    <td>FlashLEDWhileActive
-Whether to flash the LED while recording data.
-
-Accepted values:
-false (default)
-true</td>
+    <td>FlashLEDWhileActive</td>
+    <td>Whether to flash the LED while recording data.
+        <p>Accepted values:</p>
+        <ul>
+            <li>false (default)</li>
+            <li>true</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>bool</td>
   </tr>
   <tr>
-    <td>FlashLEDInDelay
-Whether to flash the LED while in DELAY mode.
-
-Accepted values:
-false (default)
-true</td>
+    <td>FlashLEDInDelay</td>
+    <td>Whether to flash the LED while in DELAY mode.
+        <p>Accepted values:</p>
+        <ul>
+            <li>false (default)</li>
+            <li>true</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>bool</td>
   </tr>
   <tr>
-    <td>HeartRate
-Whether to record Heart Rate data.
-
-Notes:
-Only available on devices capable of using Polar strap or wireless devices.  Must be used with a heart rate strap!
-Accepted values:
-false (default)
-true</td>
+    <td>HeartRate</td>
+    <td<Whether to record Heart Rate data.
+        <p>Notes:</p>
+        <ul>
+            <li>Only available on devices capable of using Polar strap or wireless devices.  Must be used with a heart rate strap!</li>
+        </ul>
+        <p>Accepted values:</p>
+        <ul>
+            <li>false (default)</li>
+            <li>true</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>bool</td>
   </tr>
   <tr>
-    <td>Lux
-Whether to record ambient light changes during recording.
-
-Accepted values:
-false (default)
-true</td>
+    <td>Lux</td>
+    <td>Whether to record ambient light changes during recording.
+        <p>Accepted values:</p>
+        <ul>
+            <li>false (default)</li>
+            <li>true</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>bool</td>
   </tr>
   <tr>
-    <td>DisableSleepMode
-Whether to prevent the device from entering a sleep mode during inactivity.
-
-Notes:
-This dramatically reduces battery life!
-Accepted values:
-false (default)
-true</td>
+    <td>DisableSleepMode</td>
+    <td>Whether to prevent the device from entering a sleep mode during inactivity.
+        <p>Notes:</p>
+        <ul>
+            <li>This dramatically reduces battery life!</li>
+        </ul>
+        <p>Accepted values:</p>
+        <ul>
+            <li>false (default)</li>
+            <li>true</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>bool</td>
   </tr>
   <tr>
-    <td>AntWireless
-Enable ANT Wireless capabilities.
-
-Notes:
-Only available on w-Devices such as wGT3X+ and wActiSleep+.
-Ignored by WirelessInitialize action.
-Accepted values:
-false (default)
-true</td>
+    <td>AntWireless</td>
+    <td>Enable ANT Wireless capabilities.
+        <p>Notes:</p>
+        <ul>
+            <li>Only available on w-Devices such as wGT3X+ and wActiSleep+.</li>
+            <li>Ignored by WirelessInitialize action.</li>
+        </ul>
+        <p>Accepted values:</p>
+        <ul>
+            <li>false (default)</li>
+            <li>true</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>bool</td>
   </tr>
   <tr>
-    <td>DataSummary
-Enable Data Summary capabilities (stores daily summary data into expenditure ‘buckets’).
-
-Notes:
-Only available on w-Devices such as wGT3X+ and wActiSleep+.
-Accepted values:
-false (default)
-true</td>
+    <td>DataSummary</td> 
+    <td>Enable Data Summary capabilities (stores daily summary data into expenditure ‘buckets’).
+        <p>Notes:</p>
+        <ul>
+            <li>Only available on w-Devices such as wGT3X+ and wActiSleep+.</li>
+        </ul>
+        <p>Accepted values:</p>
+        <ul>
+            <li>false (default)</li>
+            <li>true</li>
+        </ul>
+    </td>
     <td>No</td>
     <td>bool</td>
   </tr>
   <tr>
-    <td>DoNotUpgradeFW
-Prevent FW upgrading during initialization.</td>
+    <td>DoNotUpgradeFW</td>
+    <td>Prevent FW upgrading during initialization.</td>
     <td>No</td>
     <td>bool</td>
   </tr>
