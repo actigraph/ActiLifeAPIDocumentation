@@ -9,6 +9,31 @@ Lists all connected USB devices and continues listing devices as they are plugge
 
 ## Action
 
+<table>
+  <tr>
+    <th>Argument</th>
+    <th>Description</th>
+    <th>Required</th>
+    <th>TYPE</th>
+  </tr>
+  <tr>
+    <td>ContinueReportingAsync [API 1.8]</td>
+    <td>Instructs ActiLife to continue notifying when devices are connected.  If disabled, ActiLife will send a response for each device connected and NOT continue to notify when new devices are connected.
+        <p>Notes:</p>
+        <ul>
+            <li>To regain the asynchronous functionality simply issue the USBList action with this turned on.</li>
+		</ul>
+        <p>Accepted values:</p>
+        <ul>
+            <li>true (default)</li>
+            <li>false</li>
+		</ul>
+	</td>
+    <td>No</td>
+    <td>bool</td>
+  </tr>
+</table>
+
 ### Example Action
 
     {
@@ -83,6 +108,16 @@ Lists all connected USB devices and continues listing devices as they are plugge
     <td>The configured sample rate at which the device collects raw data. This is typically a value between 30 and 100.</td>
     <td>int</td>
   </tr>
+  <tr>
+    <td>TotalDeviceCount [API 1.8]</td>
+    <td>The number of connected devices.</td>
+    <td>int</td>
+  </tr>
+  <tr>
+    <td>Siblings [API 1.8]</td>
+    <td>A list of other device serial numbers available.</td>
+    <td>Array&lt;string&gt;</td>
+  </tr>
 </table>
 
 ### Example Response
@@ -101,5 +136,7 @@ Lists all connected USB devices and continues listing devices as they are plugge
             "BatteryPercentage": 99.9,
             "SampleRate": 30,
             "Firmware": "3.0.0",
+            "TotalDeviceCount": 3,
+            "Siblings": ["CLE2A01234567","CLE2A76543210"]
         }
     }

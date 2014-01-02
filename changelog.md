@@ -78,4 +78,9 @@ The following table describes the changes that have been made to this document s
     <td>Migrated from single Google Drive document to Github repository. Refactored content single page into sections.</td>
     <td>2013-12-23</td>
   </tr>
+  <tr>
+    <td>O</td>
+    <td>Improved USBList action with ContinueReportingAsync, TotalDeviceCount, and Siblings.</td>
+    <td>2014-01-02</td>
+  </tr>
 </table>
