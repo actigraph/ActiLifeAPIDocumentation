@@ -14,7 +14,7 @@ Downloads data from a device connected via USB.
     <th>Argument</th>
     <th>Description</th>
     <th>Required</th>
-    <th>TYPE</th>
+    <th>Type</th>
   </tr>
   <tr>
     <td>Serial</td>
@@ -48,6 +48,7 @@ Downloads data from a device connected via USB.
         <ul>
             <li>"gt3x"</li>
             <li>"agd" (default; must provide <a href="../elements/agdoptions.md">AGDOptions</a>)</li>
+            <li>"rawcsv" (can provide <a href="../elements/csvoptions.md">CSVOptions</a>) [API 1.9]</li>
         </ul>
         <p>Notes:</p>
         <ul>
@@ -60,7 +61,7 @@ Downloads data from a device connected via USB.
   </tr>
   <tr>
     <td><a href="../elements/agdoptions.md">AGDOptions</a></td>
-    <td>AGD options are a nested JSON object. Controls options for creating an AGD (if AGD is output).
+    <td>Options for creating an AGD if AGD is desired output.
         <p>Notes:</p>
         <ul>
             <li>Required if output type includes AGD.</li>
@@ -94,6 +95,12 @@ Downloads data from a device connected via USB.
     <td>Depends</td>
     <td>JSON</td>
   </tr>
+  <tr>
+    <td><a href="../elements/csvoptions.md">CSVOptions</a></td>
+    <td>Options for creating a CSV file if CSV is desired output.</td>
+    <td>No</td>
+    <td>JSON</td>
+  </tr>
 </table>
 
 ### Example Action
@@ -105,9 +112,10 @@ Downloads data from a device connected via USB.
             "FileUseMetricUnits": false,
             "FileFormats": [
                 "agd",
-                "gt3x"
+                "gt3x",
+                "rawcsv"
             ],
-            "FileOutputPath": "C:\USBDownloads\test.gt3x",
+            "FileOutputPath": "C:\USBDownloads\CLE123456789.gt3x",
             "AGDOptions": {
                 "Axis": 3,
                 "Steps": true,
@@ -127,6 +135,11 @@ Downloads data from a device connected via USB.
                 "Limb": "Waist",
                 "Side": "Right",
                 "Dominance": "Dominant"
+            },
+            "CSVOptions": {
+                "IncludeMetadata": true,
+                "IncludeColumnHeaders": true,
+                "IncludeTimestamps": true
             }
         }
     }
@@ -155,8 +168,9 @@ Downloads data from a device connected via USB.
         "Args": { ... },
         "Payload": {
             "FileOutputPaths": [
-                "C:\USBDownloads\test.gt3x",
-                "C:\USBDownloads\test.agd"
+                "C:\USBDownloads\CLE123456789.gt3x",
+                "C:\USBDownloads\CLE123456789.agd",
+                "C:\USBDownloads\CLE123456789RAW.csv"
             ]
         }
     }
