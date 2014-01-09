@@ -61,6 +61,7 @@ Actions are sent to ActiLife to instruct it to either do something or return dat
 * [ActiLifeRestore [API 1.0]](actions/actiliferestore.md)
 * [ActiLifeVersion [API 1.6]](actions/actilifeversion.md)
 * [APIVersion [API 1.4]](actions/apiversion.md)
+* [ConvertFile [API 1.9]](actions/convertfile.md)
 * [NHANESWTV [API 1.7]](actions/nhaneswtv.md)
 * [USBDownload [API 1.2]](actions/usbdownload.md)
 * [USBIdentify [API 1.5]](actions/usbidentify.md)
