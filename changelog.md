@@ -90,7 +90,7 @@ The following table describes the changes that have been made to this documentat
   </tr>
   <tr>
     <td>2014-01-09</td>
-    <td>Added ConvertFile action with gt3x to rawcsv support. Removed "Revision" from changelog as "Date" is sufficient.</td>
+    <td>Added ConvertFile action with gt3x to rawcsv support. Removed "Revision" from changelog as "Date" is sufficient. <strong>Fixed: </strong>ActiLife is now expecting the correctly documented "FileFormats" for USBDownload instead of "FileFormat"</td>
     <td>1.9/6.10</td>
   </tr>
 </table>
