@@ -93,4 +93,9 @@ The following table describes the changes that have been made to this documentat
     <td>Added ConvertFile action with gt3x to rawcsv support. Removed "Revision" from changelog as "Date" is sufficient. <strong>Fixed: </strong>ActiLife is now expecting the correctly documented "FileFormats" for USBDownload instead of "FileFormat"</td>
     <td>1.9/6.10</td>
   </tr>
+  <tr>
+    <td>2014-07-07</td>
+    <td>Added DataScoring action with AGD to algorithm result support.</td>
+    <td>1.10/6.11.2</td>
+  </tr>
 </table>
