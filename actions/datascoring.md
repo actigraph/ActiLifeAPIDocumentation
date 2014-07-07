@@ -201,9 +201,9 @@ Get data scoring algorithm results for a single AGD file.
 
 ### Detailed Response
   
-* [Energy Expenditure Results](elements/eeResults.md)
-* [MET Results](elements/metResults.md)
-* [Cut Point Results](elements/cutPointResults.md)
-* [Bout Results](elements/boutResults.md)
-* [Sedentary Results](elements/sedentaryResults.md)
-* [Extra Stats Results](elemtns/statResults.md)
+* [Energy Expenditure Results](../elements/eeResults.md)
+* [MET Results](../elements/metResults.md)
+* [Cut Point Results](../elements/cutPointResults.md)
+* [Bout Results](../elements/boutResults.md)
+* [Sedentary Results](../elements/sedentaryResults.md)
+* [Extra Stats Results](../elements/statResults.md)
