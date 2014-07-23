@@ -1,6 +1,6 @@
 ## CutPointOptions [API 1.10]
 
-Options for a Cut Point Algorithms.
+Options for Cut Point Algorithms.
 
 <table>
   <tr>
@@ -8,18 +8,6 @@ Options for a Cut Point Algorithms.
     <th>Description</th>
     <th>Required</th>
     <th>Type</th>
-  </tr>
-  <tr>
-    <td>Calculate</td>
-    <td>If enabled, ActiLife will calculate cut point results.
-        <p>Accepted values:</p>
-        <ul>
-            <li>true</li>
-            <li>false (default)</li>
-		</ul>
-    </td>
-    <td>Yes</td>
-    <td>bool</td>
   </tr>
   <tr>
     <td>Algorithm</td>

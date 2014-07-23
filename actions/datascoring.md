@@ -28,11 +28,29 @@ Get data scoring algorithm results for a single AGD file.
     <td>No</td>
     <td>JSON</td>
   </tr>
-    <tr>
+  <tr>
+    <td>CalculateEnergyExpenditure</td>
+    <td>If enabled, ActiLife will calculate energy expenditure results.
+        <p>Accepted Values:</p>
+        <ul><li>true</li><li>false (default)</ul></td>
+    </td>
+    <td>No</td>
+    <td>bool</td>
+  </tr>
+  <tr>
     <td><a href="../elements/eeOptions.md">EnergyExpenditureOptions</a></td>
     <td>Options for calculating energy expenditure results.</td>
     <td>No</td>
     <td>JSON</td>
+  </tr>
+  <tr>
+    <td>CalculateMETs</td>
+    <td>If enabled, ActiLife will calculate MET results.
+        <p>Accepted Values:</p>
+        <ul><li>true</li><li>false (default)</ul></td>
+    </td>
+    <td>No</td>
+    <td>bool</td>
   </tr>
   <tr>
     <td><a href="../elements/metOptions.md">METOptions</a></td>
@@ -41,28 +59,46 @@ Get data scoring algorithm results for a single AGD file.
     <td>JSON</td>
   </tr>
   <tr>
+    <td>CalculateCutPoints</td>
+    <td>If enabled, ActiLife will calculate Cut Point results.
+        <p>Accepted Values:</p>
+        <ul><li>true</li><li>false (default)</ul></td>
+    </td>
+    <td>No</td>
+    <td>bool</td>
+  </tr>
+  <tr>
     <td><a href="../elements/cutPointOptions.md">CutPointOptions</a></td>
     <td>Options for calculating cut point results.</td>
     <td>No</td>
     <td>JSON</td>
   </tr>
   <tr>
-    <td><a href="../elements/boutOptions.md">BoutOptions</a></td>
-    <td>Options for calculating bout results.</td>
+    <td>CalculateBouts</td>
+    <td>If enabled, ActiLife will calculate Bout results using the default ActiLife bout settings.
+        <p>Accepted Values:</p>
+        <ul><li>true</li><li>false (default)</ul></td>
+    </td>
     <td>No</td>
-    <td>JSON</td>
+    <td>bool</td>
   </tr>
   <tr>
-    <td><a href="../elements/sedentaryOptions.md">SedentaryOptions</a></td>
-    <td>Options for calculating sedentary results.</td>
+    <td>CalculateSedentaryAnalysis</td>
+    <td>If enabled, ActiLife will calculate Sedentary results using the default ActiLife sedentary settings.
+        <p>Accepted Values:</p>
+        <ul><li>true</li><li>false (default)</ul></td>
+    </td>
     <td>No</td>
-    <td>JSON</td>
+    <td>bool</td>
   </tr>
   <tr>
-    <td><a href="../elements/statsOptions.md">ExtraStatisticsOptions</a></td>
-    <td>Options for calculating extra AGD statistic results.</td>
+    <td>IncludeExtraStatistics</td>
+    <td>If enabled, ActiLife will calculate extra statistics.
+        <p>Accepted Values:</p>
+        <ul><li>true</li><li>false (default)</ul></td>
+    </td>
     <td>No</td>
-    <td>JSON</td>
+    <td>bool</td>
   </tr>
   <tr>
     <td><a href="../elements/resultOptions.md">ResultOptions</a></td>
@@ -84,9 +120,9 @@ Get data scoring algorithm results for a single AGD file.
 				"UseWTVData": true,
        			"UseLogDiaries": false
 			}
+			"CalculateEnergyExpenditure": true,
 			"EnergyExpenditureOptions": 
 			{
-				"Calculate": true,
 				"EnergyExpenditureAlgorithm": "FreedsonSingleCombination"
 			}
 			"ResultOptions":
