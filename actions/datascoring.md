@@ -23,7 +23,7 @@ Get data scoring algorithm results for a single AGD file.
     <td>string</td>
   </tr>
   <tr>
-    <td><a href="../elements/filtereOptions.md">FilterOptions</a></td>
+    <td><a href="../elements/filterOptions.md">FilterOptions</a></td>
     <td>Options for which filters to use when calculating.</td>
     <td>No</td>
     <td>JSON</td>
