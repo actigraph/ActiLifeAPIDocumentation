@@ -20,7 +20,7 @@ Options for which filters to use for data scoring.
   </tr>
   <tr>
     <td>UseLogDiaries</td>
-    <td>If enabled and the AGD file has them, ActiLife will only use log diary times. 
+    <td>If enabled and the AGD file has them, ActiLife will use log diary times. 
         <p>Accepted Values:</p>
         <ul><li>true</li><li>false (default)</ul></td>
     </td>
