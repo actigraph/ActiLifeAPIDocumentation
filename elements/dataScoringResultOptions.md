@@ -1,4 +1,4 @@
-## ResultOptions [API 1.10]
+## DataScoringResultOptions [API 1.10]
 
 Options for what data scoring will return.
 

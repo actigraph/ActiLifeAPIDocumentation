@@ -101,7 +101,7 @@ Get data scoring algorithm results for a single AGD file.
     <td>bool</td>
   </tr>
   <tr>
-    <td><a href="../elements/resultOptions.md">ResultOptions</a></td>
+    <td><a href="../elements/dataScoringResultOptions.md">DataScoringResultOptions</a></td>
     <td>Options for which results to return.</td>
     <td>No</td>
     <td>JSON</td>
@@ -133,7 +133,7 @@ Get data scoring algorithm results for a single AGD file.
 	    "CalculateBouts": false,
 	    "CalculateSedentaryAnalysis": false,
 	    "IncludeExtraStatistics": false,
-	    "ResultOptions": {
+	    "DataScoringResultOptions": {
 	      "IncludeTotalResults": true,
 	      "IncludeDailyResults": false,
 	      "IncludeHourlyResults": false
