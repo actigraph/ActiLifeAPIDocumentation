@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>ActiLife API Documentation by actigraph</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>ActiLife API Documentation</h1>
+        <p>Documentation for using the ActiGraph ActiLife API</p>
+        <p class="view"><a href="https://github.com/actigraph/ActiLifeAPIDocumentation">View the Project on GitHub <small>actigraph/ActiLifeAPIDocumentation</small></a></p>
+        <ul>
+          <li><a href="https://github.com/actigraph/ActiLifeAPIDocumentation/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/actigraph/ActiLifeAPIDocumentation/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/actigraph/ActiLifeAPIDocumentation">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="actilife-api" class="anchor" href="#actilife-api"><span class="octicon octicon-link"></span></a>ActiLife API</h1>
+
+<ul>
+<li>
+<strong>Document #:</strong> ATL12DOC06</li>
+<li>
+<strong>Revision:</strong> N <a href="changelog.md">changelog</a>
+</li>
+<li>
+<strong>Revision Date:</strong> 2013-12-23</li>
+</ul><p><strong>Prepared By:</strong></p>
+
+<ul>
+<li>
+<a href="https://github.com/jeremydavidmoore">Jeremy Moore</a> - Software Developer</li>
+<li>
+<a href="https://github.com/derekgates">Derek Gates</a> - Software Developer</li>
+<li>
+<a href="https://github.com/dwjref">Daniel Judge</a> - Software Developer</li>
+</ul><h2>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>The ActiLife API was developed so that other software products can utilize <a href="http://www.actigraphcorp.com/product-category/activity-monitors">ActiGraph monitors</a> outside of the <a href="http://www.actigraphcorp.com/product-category/software">ActiLife</a> software itself.  However, currently ActiLife must be installed on the machine that will communicate with the API.  As with ActiLife, the ActiLife API is only supported in a Windows environment. However, a piece of software can be written that talks to any operating system over any protocol.</p>
+
+<p><a href="technical.md">Technical information</a> is also available.</p>
+
+<h2>
+<a name="enabling-the-actilife-api" class="anchor" href="#enabling-the-actilife-api"><span class="octicon octicon-link"></span></a>Enabling the ActiLife API</h2>
+
+<p>The ActiLife API is supported as a opt-in feature only.  It does not work with any ActiLife installation.  This feature must be turned on for your product key.  Please contact <a href="http://www.actigraphcorp.com/support/contact-support/">ActiGraph</a> for more information.</p>
+
+<h2>
+<a name="actions" class="anchor" href="#actions"><span class="octicon octicon-link"></span></a>Actions</h2>
+
+<p>Actions are sent to ActiLife to instruct it to either do something or return data.</p>
+
+<table>
+<tr>
+<th>Element</th>
+    <th>Description</th>
+    <th>Required</th>
+    <th>Type</th>
+  </tr>
+<tr>
+<td>Action</td>
+    <td>The action to be processed.</td>
+    <td>Yes</td>
+    <td>string</td>
+  </tr>
+<tr>
+<td>Args</td>
+    <td>Array of nested elements to configure the action.</td>
+    <td>No</td>
+    <td>JSON</td>
+  </tr>
+</table><h3>
+<a name="example-action" class="anchor" href="#example-action"><span class="octicon octicon-link"></span></a>Example Action</h3>
+
+<pre><code>{
+    "Action": "WirelessIdentify",
+    "Args": {
+        "AntID": 124,
+        "TimeoutSeconds": 30
+    }
+}
+</code></pre>
+
+<h3>
+<a name="available-actions-a-z" class="anchor" href="#available-actions-a-z"><span class="octicon octicon-link"></span></a>Available Actions [A-Z]</h3>
+
+<ul>
+<li><a href="actions/actilifeminimize.md">ActiLifeMinimize [API 1.0]</a></li>
+<li><a href="actions/actiliferestore.md">ActiLifeRestore [API 1.0]</a></li>
+<li><a href="actions/actilifeversion.md">ActiLifeVersion [API 1.6]</a></li>
+<li><a href="actions/apiversion.md">APIVersion [API 1.4]</a></li>
+<li><a href="actions/convertfile.md">ConvertFile [API 1.9]</a></li>
+<li><a href="actions/datascoring.md">DataScoring [API 1.10]</a></li>
+<li><a href="actions/nhaneswtv.md">NHANESWTV [API 1.7]</a></li>
+<li><a href="actions/usbdownload.md">USBDownload [API 1.2]</a></li>
+<li><a href="actions/usbidentify.md">USBIdentify [API 1.5]</a></li>
+<li><a href="actions/usbinitialize.md">USBInitialize [API 1.2]</a></li>
+<li><a href="actions/usblist.md">USBList [API 1.1]</a></li>
+<li><a href="actions/wirelessburst.md">WirelessBurst [API 1.0]</a></li>
+<li><a href="actions/wirelessidentify.md">WirelessIdentify [API 1.0]</a></li>
+<li><a href="actions/wirelessinitialize.md">WirelessInitialize [API 1.2]</a></li>
+<li><a href="actions/wirelessrealtimestart.md">WirelessRealtimeStart [API 1.0]</a></li>
+<li><a href="actions/wirelessrealtimestop.md">WirelessRealtimeStop [API 1.0]</a></li>
+<li><a href="actions/wirelessstart.md">WirelessStart [API 1.0]</a></li>
+<li><a href="actions/wirelessstop.md">WirelessStop [API 1.0]</a></li>
+</ul><h3>
+<a name="common-elements-a-z" class="anchor" href="#common-elements-a-z"><span class="octicon octicon-link"></span></a>Common Elements [A-Z]</h3>
+
+<ul>
+<li><a href="elements/agdoptions.md">AGDOptions</a></li>
+<li><a href="elements/biodata.md">BioData</a></li>
+<li><a href="elements/initoptions.md">InitOptions</a></li>
+</ul><h2>
+<a name="responses" class="anchor" href="#responses"><span class="octicon octicon-link"></span></a>Responses</h2>
+
+<p>Responses sent from ActiLife either describe that the requested action was processed successfully, failed for a given reason, failed for an unknown reason, or provide data as it becomes available to ActiLife.</p>
+
+<table>
+<tr>
+<th>Element</th>
+    <th>Description</th>
+    <th>Required</th>
+    <th>Type</th>
+  </tr>
+<tr>
+<td>Response</td>
+    <td>The action in which the response pertains to.</td>
+    <td>Yes</td>
+    <td>string</td>
+  </tr>
+<tr>
+<td>Success</td>
+    <td>If the action completed without error.</td>
+    <td>Yes</td>
+    <td>bool</td>
+  </tr>
+<tr>
+<td>Error</td>
+    <td>What went wrong, if anything. This value is sent with the response if success == false.</td>
+    <td>No</td>
+    <td>string</td>
+  </tr>
+<tr>
+<td>Args</td>
+    <td>The original Args sent from the corresponding Action.</td>
+    <td>No</td>
+    <td>JSON</td>
+  </tr>
+</table><h3>
+<a name="common-elements-a-z-1" class="anchor" href="#common-elements-a-z-1"><span class="octicon octicon-link"></span></a>Common Elements [A-Z]</h3>
+
+<ul>
+<li><a href="elements/boutdata.md">BoutData</a></li>
+<li><a href="elements/daywtv.md">DayWTV</a></li>
+<li><a href="elements/validationbout.md">ValidationBout</a></li>
+</ul><h3>
+<a name="error-responses-a-z" class="anchor" href="#error-responses-a-z"><span class="octicon octicon-link"></span></a>Error Responses [A-Z]</h3>
+
+<ul>
+<li><a href="responses/errorgeneral.md">ErrorGeneral</a></li>
+<li><a href="responses/errorinvalidsyntax.md">ErrorInvalidSyntax</a></li>
+<li><a href="responses/errorunknownaction.md">ErrorUnknownAction</a></li>
+</ul><h2>
+<a name="actilife-api-flags" class="anchor" href="#actilife-api-flags"><span class="octicon octicon-link"></span></a>ActiLife API Flags</h2>
+
+<p>You can start ActiLife 6.7.0 or greater with the following flags to configure its behavior when using the API.</p>
+
+<dl>
+<dt>--hidegui</dt>
+    <dd>Suppresses messages and notifications from ActiLife.  No GUI will be shown when ActiLife is started with this flag.  Note: This will cause ActiLife to NOT show the upgrade prompt and effectively never be upgraded.</dd>
+</dl>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/actigraph">actigraph</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
