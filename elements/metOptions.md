@@ -25,6 +25,7 @@ Options for MET Algorithms.
             <li>YngveOverground2003Adult</li>
             <li>BrooksOverground2003Adult</li>
             <li>BrooksBodymassOverground2003Adult</li>
+			<li>FreedsonChildren</li>
 		</ul>
     </td>
     <td>No</td>

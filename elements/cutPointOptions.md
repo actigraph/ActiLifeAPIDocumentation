@@ -15,7 +15,7 @@ Options for Cut Point Algorithms.
         <p>Accepted values:</p>
         <ul>
             <li>FreedsonAdult1998 (default)</li>
-            <li>FreedsonAdultVM32001</li>
+            <li>FreedsonAdultVM32011</li>
             <li>FreedsonChildren2005</li>
             <li>PuyauChildren2002</li>
             <li>TreuthChildrenGirls2004</li>
@@ -24,7 +24,7 @@ Options for Cut Point Algorithms.
             <li>PatePreschool2006</li>
             <li>TrostToddler2011</li>
             <li>TroianoAdult2008</li>
-            <li>PulsfordChildren2001</li>
+            <li>PulsfordChildren2011</li>
             <li>ButtePreschoolersVM2013</li>
             <li>ButtePreschoolers2013</li>
 		</ul>
