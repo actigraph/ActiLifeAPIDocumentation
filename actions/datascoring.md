@@ -111,28 +111,35 @@ Get data scoring algorithm results for a single AGD file.
 ### Example Action
 
     {
-        "Action": "DataScoring",
-        "Args": 
-		{
-            "FileInputPath": "c:\\input\\CLE2A123456789.agd",
-			"FilterOptions": 
-			{
-				"UseWTVData": true,
-       			"UseLogDiaries": false
-			}
-			"CalculateEnergyExpenditure": true,
-			"EnergyExpenditureOptions": 
-			{
-				"EnergyExpenditureAlgorithm": "FreedsonSingleCombination"
-			}
-			"ResultOptions":
-			{
-				"IncludeTotalResults": true,
-				"IncludeExtraStatistics": true,
-				"IncludeDailyResults": true
-			}
-        }
-    }
+	  "Action": "DataScoring",
+	  "Args": {
+	    "FileInputPath": "c:\\users\\daniel.judge\\Desktop\\HKAtlanta.agd",
+	    "FilterOptions": {
+	      "UseWTVData": true,
+	      "UseLogDiaries": false
+	    },
+	    "CalculateEnergyExpenditure": true,
+	    "EnergyExpenditureOptions": {
+	      "Algorithm": "FreedsonSingleCombination"
+	    },
+	    "CalculateMETs": false,
+	    "METOptions": {
+	      "Algorithm": "FreedsonEEAdult"
+	    },
+	    "CalculateCutPoints": false,
+	    "CutPointOptions": {
+	      "Algorithm": "FreedsonAdult1998"
+	    },
+	    "CalculateBouts": false,
+	    "CalculateSedentaryAnalysis": false,
+	    "IncludeExtraStatistics": false,
+	    "ResultOptions": {
+	      "IncludeTotalResults": true,
+	      "IncludeDailyResults": false,
+	      "IncludeHourlyResults": false
+	    }
+	  }
+	}
 
 ## Response
 
