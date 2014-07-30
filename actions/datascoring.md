@@ -113,7 +113,7 @@ Get data scoring algorithm results for a single AGD file.
     {
 	  "Action": "DataScoring",
 	  "Args": {
-	    "FileInputPath": "c:\\users\\daniel.judge\\Desktop\\HKAtlanta.agd",
+	    "FileInputPath": "c:\\users\\john.doe\\Desktop\\file.agd",
 	    "FilterOptions": {
 	      "UseWTVData": true,
 	      "UseLogDiaries": false
