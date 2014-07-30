@@ -11,7 +11,7 @@ Options for which filters to use for data scoring.
   </tr>
   <tr>
     <td>UseWTVData</td>
-    <td>If enabled and the AGD file has them, ActiLife will filter non-wear time from the results.
+    <td>Enable this option to exclude non-wear data periods from analysis. This does not perform the non-wear analysis.  The non-wear analysis must already be present in the AGD file; otherwise this option is ignored and all data is considered wear.
         <p>Accepted Values:</p>
         <ul><li>true (default)</li><li>false</ul></td>
     </td>
@@ -20,7 +20,7 @@ Options for which filters to use for data scoring.
   </tr>
   <tr>
     <td>UseLogDiaries</td>
-    <td>If enabled and the AGD file has them, ActiLife will use log diary times. 
+    <td>Enable this option to only include log diary periods from analysis. This does not allow you to add log diaries. The log diaries must already be present in the AGD file. If UseWTVData and UseLogDiaries are both selected (and the file has both) the analysis will only include the overlapping periods of wear periods and log diaries.
         <p>Accepted Values:</p>
         <ul><li>true</li><li>false (default)</ul></td>
     </td>
