@@ -24,4 +24,20 @@ Options for Energy Expenditure Algorithms.
     <td>No</td>
     <td>string</td>
   </tr>
+  <tr>
+    <td>Weight</td>
+    <td>Weight of the subject in kilograms.
+        <p>Notes:</p>
+        <ul>
+			<li>If an AGD already has a weight, it is not necessary to pass in this parameter.</li> 
+			<li>If the AGD doesn't have a weight and no weight is passed in, the calculation will return with an error.</li>
+        </ul>
+        <p>Restrictions:</p>
+        <ul>
+            <li>0 - 2000 kg</li>
+        </ul>
+    </td>
+    <td>No</td>
+    <td>float</td>
+  </tr>
 </table>
