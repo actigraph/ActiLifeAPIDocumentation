@@ -120,11 +120,13 @@ Get data scoring algorithm results for a single AGD file.
 	    },
 	    "CalculateEnergyExpenditure": true,
 	    "EnergyExpenditureOptions": {
-	      "Algorithm": "FreedsonSingleCombination"
+	      "Algorithm": "FreedsonSingleCombination",
+		  "Weight": 175
 	    },
 	    "CalculateMETs": false,
 	    "METOptions": {
-	      "Algorithm": "FreedsonEEAdult"
+	      "Algorithm": "FreedsonEEAdult",
+		  "Weight": 175
 	    },
 	    "CalculateCutPoints": false,
 	    "CutPointOptions": {
