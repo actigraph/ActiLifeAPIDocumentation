@@ -5,21 +5,24 @@ Returns the version of ActiLife that is running.
 ## Action
 
 ### Example Action
-
-    {
-        "Action": "ActiLifeVersion"
-    }
+```JSON
+{
+    "Action": "ActiLifeVersion"
+}
+```
 
 ## Response
 
 ### Example Response
 
-    {
-        "Response": "ActiLifeVersion",
-        "Success": true,
-        "Error": "",
-        "Args": { ... },
-        "Payload": {
-            "Version": "6.6"
-        }
+```JSON
+{
+    "Response": "ActiLifeVersion",
+    "Success": true,
+    "Error": "",
+    "Args": { ... },
+    "Payload": {
+        "Version": "6.6"
     }
+}
+```

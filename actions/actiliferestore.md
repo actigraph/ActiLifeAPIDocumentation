@@ -5,18 +5,20 @@ Restores ActiLife from a minimized state.
 ## Action
 
 ### Example Action
-
-    {
-        "Action": "ActiLifeRestore"
-    }
+```JSON
+{
+    "Action": "ActiLifeRestore"
+}
+```
 
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "ActiLifeRestore",
-        "Success": true,
-        "Error": "",
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "ActiLifeRestore",
+    "Success": true,
+    "Error": "",
+    "Args": { ... }
+}
+```

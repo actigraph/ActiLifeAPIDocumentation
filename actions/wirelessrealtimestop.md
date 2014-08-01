@@ -20,21 +20,23 @@ Stop receiving data real time from an ANT device.
 </table>
 
 ### Example Action
-
-    {
-        "Action": "WirelessRealtimeStop",
-        "Args": {
-            "AntID": "123"
-        }
+```JSON
+{
+    "Action": "WirelessRealtimeStop",
+    "Args": {
+        "AntID": "123"
     }
+}
+```
 
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "WirelessRealtimeStop",
-        "Success": true,
-        "Error": "",
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "WirelessRealtimeStop",
+    "Success": true,
+    "Error": "",
+    "Args": { ... }
+}
+```

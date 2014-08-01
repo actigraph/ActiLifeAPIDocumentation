@@ -5,21 +5,23 @@ Returns the version of the API operating in the current responding version of Ac
 ## Action
 
 ### Example Action
-
-    {
-        "Action": "APIVersion"
-    }
+```JSON
+{
+    "Action": "APIVersion"
+}
+```
 
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "APIVersion",
-        "Success": true,
-        "Error": "",
-        "Args": { ... },
-        "Payload": {
-            "Version": "1.4"
-        }
+```JSON
+{
+    "Response": "APIVersion",
+    "Success": true,
+    "Error": "",
+    "Args": { ... },
+    "Payload": {
+        "Version": "1.4"
     }
+}
+```

@@ -37,33 +37,34 @@ Start receiving data real time from an ANT device. Wireless scanning must have b
 </table>
 
 ### Example Action
-
-    {
-        "Action": "WirelessRealtimeStart",
-        "Args":  {
-            "AntID": "123",
-            "TimeoutSeconds": 30,
-            "AntPIN": "1234"
-        }
+```JSON
+{
+    "Action": "WirelessRealtimeStart",
+    "Args":  {
+        "AntID": "123",
+        "TimeoutSeconds": 30,
+        "AntPIN": "1234"
     }
-
+}
+```
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "WirelessRealtimeStart",
-        "Success": true,
-        "Error": "",
-        "Payload": {
-            [
-                { "Timestamp": "<UTC Timestamp>",
-                    "Axis": [ <axis1 (Y)>, <axis2 (Z)>, <axis3 (X)> ],
-                    "HeartRate": <BPM if sensor connected>,
-                    "Lux": <value from light sensor>
-                },
-                {...}
-            ]
-        },
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "WirelessRealtimeStart",
+    "Success": true,
+    "Error": "",
+    "Payload": {
+        [
+            { "Timestamp": "<UTC Timestamp>",
+                "Axis": [ <axis1 (Y)>, <axis2 (Z)>, <axis3 (X)> ],
+                "HeartRate": <BPM if sensor connected>,
+                "Lux": <value from light sensor>
+            },
+            {...}
+        ]
+    },
+    "Args": { ... }
+}
+```

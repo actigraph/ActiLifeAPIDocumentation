@@ -24,30 +24,32 @@ Starts the wireless scan of devices.
 </table>
 
 ### Example Action
-
-    {
-        "Action": "WirelessStart"
-        "Args": {
-            "AntPIN": "1234"
-        }
+```JSON
+{
+    "Action": "WirelessStart"
+    "Args": {
+        "AntPIN": "1234"
     }
+}
+```
 
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "WirelessStart",
-        "Success": true,
-        "Error": "",
-        "Payload": {
-            "AntID": 124,
-            "Serial": "CLE123456789",
-            "Status": "Active",
-            "Subject": "John Smith",
-            "Battery": 3.73,
-            "CanRealTimeStream": true,
-            "CanBurst": true
-        },
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "WirelessStart",
+    "Success": true,
+    "Error": "",
+    "Payload": {
+        "AntID": 124,
+        "Serial": "CLE123456789",
+        "Status": "Active",
+        "Subject": "John Smith",
+        "Battery": 3.73,
+        "CanRealTimeStream": true,
+        "CanBurst": true
+    },
+    "Args": { ... }
+}
+```

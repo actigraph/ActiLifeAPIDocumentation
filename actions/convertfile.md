@@ -58,29 +58,30 @@ Converts a file from one file format and epoch length to another.
 </table>
 
 ### Example Action
-
-    {
-        "Action": "ConvertFile",
-        "Args": {
-            "FileInputPath": "c:\\input\\CLE2A123456789.gt3x",
-            "FileOutputPath": "c:\\output\\CLE2A123456789.csv",
-            "FileOutputFormat": "rawcsv",
-            "ForceOverwrite": true,
-            "CSVOptions": {
-                "IncludeMetadata": true,
-                "IncludeColumnHeaders": true,
-                "IncludeTimestamps": true
-            }
+```JSON
+{
+    "Action": "ConvertFile",
+    "Args": {
+        "FileInputPath": "c:\\input\\CLE2A123456789.gt3x",
+        "FileOutputPath": "c:\\output\\CLE2A123456789.csv",
+        "FileOutputFormat": "rawcsv",
+        "ForceOverwrite": true,
+        "CSVOptions": {
+            "IncludeMetadata": true,
+            "IncludeColumnHeaders": true,
+            "IncludeTimestamps": true
         }
     }
-
+}
+```
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "ConvertFile",
-        "Success": true,
-        "Error": "",
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "ConvertFile",
+    "Success": true,
+    "Error": "",
+    "Args": { ... }
+}
+```

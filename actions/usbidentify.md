@@ -20,21 +20,23 @@ Identifies a device by flashing the LEDs.
 </table>
 
 ### Example Action
-
-    {
-        "Action": "USBIdentify",
-        "Args": {
-            "Serial": "CLE0123456789"
-        }
+```JSON
+{
+    "Action": "USBIdentify",
+    "Args": {
+        "Serial": "CLE0123456789"
     }
+}
+```
 
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "USBIdentify",
-        "Success": true,
-        "Error": "",
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "USBIdentify",
+    "Success": true,
+    "Error": "",
+    "Args": { ... }
+}
+```

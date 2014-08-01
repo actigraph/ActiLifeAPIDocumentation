@@ -104,46 +104,46 @@ Downloads data from a device connected via USB.
 </table>
 
 ### Example Action
-
-    {
-        "Action": "USBDownload",
-        "Args": {
-            "Serial": "CLE123456789",
-            "FileUseMetricUnits": false,
-            "FileFormats": [
-                "agd",
-                "gt3x",
-                "rawcsv"
-            ],
-            "FileOutputPath": "C:\USBDownloads\CLE123456789.gt3x",
-            "AGDOptions": {
-                "Axis": 3,
-                "Steps": true,
-                "Lux": true,
-                "HR": true,
-                "Inclonometer": true,
-                "EpochLengthInSeconds": 30,
-            },
-            "BioData": {
-                "SubjectName": "John Doe",
-                "Sex": "Male",
-                "Height": 182.9,
-                "Weight": 175.8,
-                "Age": 32,
-                "Race": "White / Caucasian",
-                "DateOfBirth": "1980-01-01T13:00:00Z",
-                "Limb": "Waist",
-                "Side": "Right",
-                "Dominance": "Dominant"
-            },
-            "CSVOptions": {
-                "IncludeMetadata": true,
-                "IncludeColumnHeaders": true,
-                "IncludeTimestamps": true
-            }
+```JSON
+{
+    "Action": "USBDownload",
+    "Args": {
+        "Serial": "CLE123456789",
+        "FileUseMetricUnits": false,
+        "FileFormats": [
+            "agd",
+            "gt3x",
+            "rawcsv"
+        ],
+        "FileOutputPath": "C:\USBDownloads\CLE123456789.gt3x",
+        "AGDOptions": {
+            "Axis": 3,
+            "Steps": true,
+            "Lux": true,
+            "HR": true,
+            "Inclonometer": true,
+            "EpochLengthInSeconds": 30,
+        },
+        "BioData": {
+            "SubjectName": "John Doe",
+            "Sex": "Male",
+            "Height": 182.9,
+            "Weight": 175.8,
+            "Age": 32,
+            "Race": "White / Caucasian",
+            "DateOfBirth": "1980-01-01T13:00:00Z",
+            "Limb": "Waist",
+            "Side": "Right",
+            "Dominance": "Dominant"
+        },
+        "CSVOptions": {
+            "IncludeMetadata": true,
+            "IncludeColumnHeaders": true,
+            "IncludeTimestamps": true
         }
     }
-
+}
+```
 ## Response
 
 <table>
@@ -160,17 +160,18 @@ Downloads data from a device connected via USB.
 </table>
 
 ### Example Response
-
-    {
-        "Response": "USBDownload",
-        "Success": true,
-        "Error": "",
-        "Args": { ... },
-        "Payload": {
-            "FileOutputPaths": [
-                "C:\USBDownloads\CLE123456789.gt3x",
-                "C:\USBDownloads\CLE123456789.agd",
-                "C:\USBDownloads\CLE123456789RAW.csv"
-            ]
-        }
+```JSON
+{
+    "Response": "USBDownload",
+    "Success": true,
+    "Error": "",
+    "Args": { ... },
+    "Payload": {
+        "FileOutputPaths": [
+            "C:\USBDownloads\CLE123456789.gt3x",
+            "C:\USBDownloads\CLE123456789.agd",
+            "C:\USBDownloads\CLE123456789RAW.csv"
+        ]
     }
+}
+```

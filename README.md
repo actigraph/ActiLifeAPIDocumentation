@@ -46,14 +46,15 @@ Actions are sent to ActiLife to instruct it to either do something or return dat
 </table>
 
 ### Example Action
-
-    {
-        "Action": "WirelessIdentify",
-        "Args": {
-            "AntID": 124,
-            "TimeoutSeconds": 30
-        }
+```JSON
+{
+    "Action": "WirelessIdentify",
+    "Args": {
+        "AntID": 124,
+        "TimeoutSeconds": 30
     }
+}
+```
 
 
 ### Available Actions [A-Z]

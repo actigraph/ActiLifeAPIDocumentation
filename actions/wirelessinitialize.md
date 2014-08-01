@@ -49,48 +49,49 @@ Initializes an ANT device (only available on w-Devices such as wGT3X+ and wActiS
 </table>
 
 ### Example Action
-
-    {
-        "Action": "WirelessInitialize",
-        "Args": {
-            "AntID": "123",
-            "TimeoutSeconds": 30,
-            "AntPIN": "1234",
-            "BioData": {
-                "SubjectName": "John Doe",
-                "Sex": "Male",
-                "Height": 182.9,
-                "Weight": 175.8,
-                "Age": 32,
-                "Race": "White / Caucasian",
-                "DateOfBirth": "1980-01-01T13:00:00Z",
-                "Limb": "Waist",
-                "Side": "Right",
-                "Dominance": "Dominant"
-            },
-            "InitOptions": {
-                "SampleRate": 40,
-                "StartDateTime": "2013-03-20T13:15:00Z",
-                "Axis": 3,
-                "Steps": true,
-                "Inclinometer": true,
-                "FlashLEDWhileActive": false,
-                "FlashLEDInDelay": true,
-                "HeartRate": false,
-                "Lux": true,
-                "DisableSleepMode": true,
-                "DataSummary": true
-            }
+```JSON
+{
+    "Action": "WirelessInitialize",
+    "Args": {
+        "AntID": "123",
+        "TimeoutSeconds": 30,
+        "AntPIN": "1234",
+        "BioData": {
+            "SubjectName": "John Doe",
+            "Sex": "Male",
+            "Height": 182.9,
+            "Weight": 175.8,
+            "Age": 32,
+            "Race": "White / Caucasian",
+            "DateOfBirth": "1980-01-01T13:00:00Z",
+            "Limb": "Waist",
+            "Side": "Right",
+            "Dominance": "Dominant"
+        },
+        "InitOptions": {
+            "SampleRate": 40,
+            "StartDateTime": "2013-03-20T13:15:00Z",
+            "Axis": 3,
+            "Steps": true,
+            "Inclinometer": true,
+            "FlashLEDWhileActive": false,
+            "FlashLEDInDelay": true,
+            "HeartRate": false,
+            "Lux": true,
+            "DisableSleepMode": true,
+            "DataSummary": true
         }
     }
-
+}
+```
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "WirelessInitialize",
-        "Success": true,
-        "Error": "",
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "WirelessInitialize",
+    "Success": true,
+    "Error": "",
+    "Args": { ... }
+}
+```

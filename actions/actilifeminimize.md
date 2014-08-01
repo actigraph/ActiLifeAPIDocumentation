@@ -5,18 +5,20 @@ Minimizes ActiLife to not be seen by the user.
 ## Action
 
 ### Example Action
-
-    {
-        "Action": "ActiLifeMinimize"
-    }
+```JSON
+{
+    "Action": "ActiLifeMinimize"
+}
+```
 
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "ActiLifeMinimize",
-        "Success": true,
-        "Error": "",
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "ActiLifeMinimize",
+    "Success": true,
+    "Error": "",
+    "Args": { ... }
+}
+```

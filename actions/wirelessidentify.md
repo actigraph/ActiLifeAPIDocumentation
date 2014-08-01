@@ -36,23 +36,25 @@ Identifies an ANT device by flashing the LEDs.
 </table>
 
 ### Example Action
-
-    {
-        "Action": "WirelessIdentify",
-        "Args": {
-            "AntID": "123",
-            "TimeoutSeconds": 30,
-            "AntPIN": "1234"
-        }
+```JSON
+{
+    "Action": "WirelessIdentify",
+    "Args": {
+        "AntID": "123",
+        "TimeoutSeconds": 30,
+        "AntPIN": "1234"
     }
+}
+```
 
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "WirelessIdentify",
-        "Success": true,
-        "Error": "",
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "WirelessIdentify",
+    "Success": true,
+    "Error": "",
+    "Args": { ... }
+}
+```

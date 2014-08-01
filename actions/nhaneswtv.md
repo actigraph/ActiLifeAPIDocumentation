@@ -38,16 +38,17 @@ Returns Wear Time Validation information from a .GT3X file or .AGD file.  This i
 </table>
 
 ### Example Action
-
-    {
-        "Action": "NHANESWTV",
-         "Args":  {
-            "Filename": "c:\dataset.agd",
-            "MinLength": 60,
-            "MinCounts": 10,
-            "DropTime": 2
-        }
+```JSON
+{
+    "Action": "NHANESWTV",
+     "Args":  {
+        "Filename": "c:\dataset.agd",
+        "MinLength": 60,
+        "MinCounts": 10,
+        "DropTime": 2
     }
+}
+```
 
 ## Response
 

@@ -35,11 +35,11 @@ Lists all connected USB devices and continues listing devices as they are plugge
 </table>
 
 ### Example Action
-
-    {
-        "Action": "USBList"
-    }
-
+```JSON
+{
+    "Action": "USBList"
+}
+```
 ## Response
 
 <table>
@@ -121,22 +121,23 @@ Lists all connected USB devices and continues listing devices as they are plugge
 </table>
 
 ### Example Response
-
-    {
-        "Response": "USBList",
-        "Success": true,
-        "Error": "",
-        "Args": { ... },
-        "Payload": {
-            "AntID": 124,
-            "Serial": "CLE123456789",
-            "Status": "Active",
-            "Subject": "John Smith",
-            "BatteryVoltage": 3.92,
-            "BatteryPercentage": 99.9,
-            "SampleRate": 30,
-            "Firmware": "3.0.0",
-            "TotalDeviceCount": 3,
-            "Siblings": ["CLE2A01234567","CLE2A76543210"]
-        }
+```JSON
+{
+    "Response": "USBList",
+    "Success": true,
+    "Error": "",
+    "Args": { ... },
+    "Payload": {
+        "AntID": 124,
+        "Serial": "CLE123456789",
+        "Status": "Active",
+        "Subject": "John Smith",
+        "BatteryVoltage": 3.92,
+        "BatteryPercentage": 99.9,
+        "SampleRate": 30,
+        "Firmware": "3.0.0",
+        "TotalDeviceCount": 3,
+        "Siblings": ["CLE2A01234567","CLE2A76543210"]
     }
+}
+```

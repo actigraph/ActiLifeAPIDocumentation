@@ -77,19 +77,19 @@ Downloads requested number of minutes of data from an ANT device.
 </table>
 
 ### Example Action
-
-    {
-        "Action": "WirelessBurst",
-        "Args": {
-            "AntID": "123",
-            "Minutes": 15,
-            "FileUseMetricUnits": false,
-            "FileFormat": "agd",
-            "FileOutputPath": "C:\BurstFolder\test.bin",
-            "AntPIN": "1234"
-        }
+```JSON
+{
+    "Action": "WirelessBurst",
+    "Args": {
+        "AntID": "123",
+        "Minutes": 15,
+        "FileUseMetricUnits": false,
+        "FileFormat": "agd",
+        "FileOutputPath": "C:\BurstFolder\test.bin",
+        "AntPIN": "1234"
     }
-
+}
+```
 
 ## Response
 
@@ -107,13 +107,14 @@ Downloads requested number of minutes of data from an ANT device.
 </table>
 
 ### Example Response
-
-    {
-        "Response": "WirelessBurst",
-        "Success": true,
-        "Error": "",
-        "Args": { ... },
-        "Payload": {
-            "FileOutputPath": "C:\BurstFolder\test.bin"
-        }
+```JSON
+{
+    "Response": "WirelessBurst",
+    "Success": true,
+    "Error": "",
+    "Args": { ... },
+    "Payload": {
+        "FileOutputPath": "C:\BurstFolder\test.bin"
     }
+}
+```

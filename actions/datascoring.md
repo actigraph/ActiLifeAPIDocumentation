@@ -109,50 +109,52 @@ Get data scoring algorithm results for a single AGD file.
 </table>
 
 ### Example Action
-
-    {
-	  "Action": "DataScoring",
-	  "Args": {
-	    "FileInputPath": "c:\\users\\john.doe\\Desktop\\file.agd",
-	    "FilterOptions": {
-	      "UseWTVData": true,
-	      "UseLogDiaries": false
-	    },
-	    "CalculateEnergyExpenditure": true,
-	    "EnergyExpenditureOptions": {
-	      "Algorithm": "FreedsonSingleCombination",
-		  "Weight": 175
-	    },
-	    "CalculateMETs": false,
-	    "METOptions": {
-	      "Algorithm": "FreedsonEEAdult",
-		  "Weight": 175
-	    },
-	    "CalculateCutPoints": false,
-	    "CutPointOptions": {
-	      "Algorithm": "FreedsonAdult1998"
-	    },
-	    "CalculateBouts": false,
-	    "CalculateSedentaryAnalysis": false,
-	    "IncludeExtraStatistics": false,
-	    "DataScoringResultOptions": {
-	      "IncludeTotalResults": true,
-	      "IncludeDailyResults": false,
-	      "IncludeHourlyResults": false
-	    }
-	  }
-	}
+```JSON
+{
+  "Action": "DataScoring",
+  "Args": {
+    "FileInputPath": "c:\\users\\john.doe\\Desktop\\file.agd",
+    "FilterOptions": {
+      "UseWTVData": true,
+      "UseLogDiaries": false
+    },
+    "CalculateEnergyExpenditure": true,
+    "EnergyExpenditureOptions": {
+      "Algorithm": "FreedsonSingleCombination",
+	  "Weight": 175
+    },
+    "CalculateMETs": false,
+    "METOptions": {
+      "Algorithm": "FreedsonEEAdult",
+	  "Weight": 175
+    },
+    "CalculateCutPoints": false,
+    "CutPointOptions": {
+      "Algorithm": "FreedsonAdult1998"
+    },
+    "CalculateBouts": false,
+    "CalculateSedentaryAnalysis": false,
+    "IncludeExtraStatistics": false,
+    "DataScoringResultOptions": {
+      "IncludeTotalResults": true,
+      "IncludeDailyResults": false,
+      "IncludeHourlyResults": false
+    }
+  }
+}
+```
 
 ## Response
 
 ### Example Response
-
-    {
-        "Response": "DataScoring",
-        "Success": true,
-        "Error": "",
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "DataScoring",
+    "Success": true,
+    "Error": "",
+    "Args": { ... }
+}
+```
 
 ### Detailed Response
   

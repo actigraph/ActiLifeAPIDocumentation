@@ -9,18 +9,19 @@ Stops the wireless scan of devices.
 ## Action
 
 ### Example Action
-
-    {
-        "Action": "WirelessStop"
-    }
-
+```JSON
+{
+    "Action": "WirelessStop"
+}
+```
 ## Response 
 
 ### Example Response
-
-    {
-        "Response": "WirelessStop",
-        "Success": 1,
-        "Error": "",
-        "Args": { ... }
-    }
+```JSON
+{
+    "Response": "WirelessStop",
+    "Success": 1,
+    "Error": "",
+    "Args": { ... }
+}
+```
