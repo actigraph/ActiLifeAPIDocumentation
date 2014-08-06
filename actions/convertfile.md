@@ -48,6 +48,17 @@ Converts a file from one file format and epoch length to another.
     <td>JSON</td>
   </tr>
   <tr>
+    <td><a href="../elements/agdoptions.md">AGDOptions</a></td>
+    <td>Options for creating an AGD file if AGD is desired output.
+        <p>Notes:</p>
+        <ul>
+            <li>Required if output type includes AGD.</li>
+        </ul>
+    </td>
+    <td>Depends</td>
+    <td>JSON</td>
+  </tr>
+  <tr>
     <td>ForceOverwrite</td>
     <td>If enabled ActiLife will delete any file at the given FileOutputPath before converting. 
         <p>Accepted Values:</p>        
