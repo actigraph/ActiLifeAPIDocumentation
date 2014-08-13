@@ -36,6 +36,7 @@ Converts a file from one file format and epoch length to another.
         <p>Accepted Values:</p>
         <ul>
             <li>"rawcsv" (can provide <a href="../elements/csvoptions.md">CSVOptions</a>)</li>
+			<li>"agd" (can provide <a href="../elements/agdoptions.md">AGDOptions</a>)</li>
         </ul>
     </td>
     <td>Yes</td>
