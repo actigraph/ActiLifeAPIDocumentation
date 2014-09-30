@@ -70,6 +70,7 @@ Actions are sent to ActiLife to instruct it to either do something or return dat
 * [USBIdentify [API 1.5]](actions/usbidentify.md)
 * [USBInitialize [API 1.2]](actions/usbinitialize.md)
 * [USBList [API 1.1]](actions/usblist.md)
+* [WearTimeValidation [API 1.11]](actions/weartimevalidation.md)
 * [WirelessBurst [API 1.0]](actions/wirelessburst.md)
 * [WirelessIdentify [API 1.0]](actions/wirelessidentify.md)
 * [WirelessInitialize [API 1.2]](actions/wirelessinitialize.md)

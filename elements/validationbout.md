@@ -7,7 +7,7 @@
     <th>Type</th>
   </tr>
   <tr>
-    <td>Length</td>
+    <td>LengthInMinutes</td>
     <td>The length of the bout in minutes.</td>
     <td>string</td>
   </tr>
@@ -22,7 +22,7 @@
     <td>DateTime</td>
   </tr>
   <tr>
-    <td>WearPeriod</td>
+    <td>IsWearPeriod</td>
     <td></td>
     <td>bool</td>
   </tr>
