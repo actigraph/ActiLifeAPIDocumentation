@@ -80,7 +80,7 @@ Calculate wear time validation results for a single AGD file.
   },
   "Payload": {
     "filename": "c:\\users\\john.doe\\Desktop\\file.agd",
-    "results": [
+    "Periods": [
       {
         "CalendarDays": 4,
         "LengthInMinutes": 4974.0,
@@ -115,6 +115,136 @@ Calculate wear time validation results for a single AGD file.
         "IsWearPeriod": true,
         "StartDateTime": "2009-10-19T07:29:00",
         "StopDateTime": "2009-10-20T05:23:00"
+      }
+    ],
+    "DayStats": [
+      {
+        "Date": "2009-10-05T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 1243875.08,
+        "WearTimeInMinutes": 780.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-06T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 2223773.66,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-07T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 2470233.1,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-08T00:00:00",
+        "NonWearTimeInMinutes": 126.0,
+        "NonWearTimePercentage": 8.75,
+        "VectorMagnitudeCounts": 2259798.37,
+        "WearTimeInMinutes": 1314.0,
+        "WearTimePercentage": 91.25
+      },
+      {
+        "Date": "2009-10-09T00:00:00",
+        "NonWearTimeInMinutes": 413.0,
+        "NonWearTimePercentage": 28.68,
+        "VectorMagnitudeCounts": 2059471.91,
+        "WearTimeInMinutes": 1027.0,
+        "WearTimePercentage": 71.32
+      },
+      {
+        "Date": "2009-10-10T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 2434605.27,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-11T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 2206379.77,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-12T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 1998994.09,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-13T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 2489578.45,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-14T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 2505689.35,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-15T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 2348089.86,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-16T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 2361062.51,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-17T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 1740830.61,
+        "WearTimeInMinutes": 1440.0,
+        "WearTimePercentage": 100.0
+      },
+      {
+        "Date": "2009-10-18T00:00:00",
+        "NonWearTimeInMinutes": 280.0,
+        "NonWearTimePercentage": 19.44,
+        "VectorMagnitudeCounts": 2327213.44,
+        "WearTimeInMinutes": 1160.0,
+        "WearTimePercentage": 80.56
+      },
+      {
+        "Date": "2009-10-19T00:00:00",
+        "NonWearTimeInMinutes": 449.0,
+        "NonWearTimePercentage": 31.18,
+        "VectorMagnitudeCounts": 2016794.83,
+        "WearTimeInMinutes": 991.0,
+        "WearTimePercentage": 68.82
+      },
+      {
+        "Date": "2009-10-20T00:00:00",
+        "NonWearTimeInMinutes": 0.0,
+        "NonWearTimePercentage": 0.0,
+        "VectorMagnitudeCounts": 51534.36,
+        "WearTimeInMinutes": 323.0,
+        "WearTimePercentage": 100.0
       }
     ]
   }
