@@ -8,67 +8,67 @@
   </tr>
   <tr>
     <td>MinimumLengthUnits</td>
-    <td></td>
+    <td>The units for the minimum length (minutes or epochs).</td>
 	<td><a href="../elements/boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseActivityThreshold</td>
-    <td></td>
+    <td>If true, allow the user to set a count value that is considered non-wear.</td>
     <td>bool</td>
   </tr>
   <tr>
     <td>ActivityThreshold</td>
-    <td></td>
+    <td>The count value that is considered non-wear (counts ranging from 0 to this value are non-wear).</td>
     <td>int</td>
   </tr>
   <tr>
     <td>ActivityThresholdUnits</td>
-    <td></td>
+    <td>The units for the activity threshold (minutes or epochs).</td>
     <td><a href="../elements/boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseMaxCount</td>
-    <td></td>
+    <td>If true, allow the user to set a large count value that is considered non-wear.</td>
     <td>bool</td>
   </tr>
   <tr>
     <td>MaxCount</td>
-    <td></td>
+    <td>The large count value that is considered non-wear (counts ranging from this value to infinity are non-wear).</td>
     <td>int</td>
   </tr>
   <tr>
     <td>MaxCountUnits</td>
-    <td></td>
+    <td>The units for the max count (minutes or epochs).</td>
     <td><a href="../elements/boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>SpikeTolerance</td>
-    <td></td>
+    <td>The amount of time allowed to be non-zero in a non-wear period.</td>
     <td>int</td>
   </tr>
   <tr>
     <td>SpikeToleranceUnits</td>
-    <td></td>
+    <td>The units for the spike tolerance (minutes or epochs).</td>
     <td><a href="../elements/boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseCountsToStopNonWearPeriod</td>
-    <td></td>
+    <td>If true, allow the user to set a count value that immediately stops the detection of a non-wear period</td>
     <td>bool</td>
   </tr>
   <tr>
     <td>CountsToStopNonWearPeriod</td>
-    <td></td>
+    <td>The count value that will immediately stop the detection of a non-wear period</td>
     <td>int</td>
   </tr>
   <tr>
     <td>CountsToStopNonWearPeriodUnits</td>
-    <td></td>
+    <td>The units for the counts to stop a non-wear period (minutes or epochs)</td>
     <td><a href="../elements/boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseConsecutiveEpochs</td>
-    <td></td>
+    <td>If true, a non-wear period will require consecutive counts above the activity threshold to stop detection</td>
     <td>bool</td>
   </tr>
   <tr>
