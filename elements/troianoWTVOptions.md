@@ -9,7 +9,7 @@
   <tr>
     <td>MinimumLengthUnits</td>
     <td>The units for the minimum length (minutes or epochs).</td>
-	<td><a href="../elements/boutUnits.md">Units</a></td>
+	<td><a href="boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseActivityThreshold</td>
@@ -24,7 +24,7 @@
   <tr>
     <td>ActivityThresholdUnits</td>
     <td>The units for the activity threshold (minutes or epochs).</td>
-    <td><a href="../elements/boutUnits.md">Units</a></td>
+    <td><a href="boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseMaxCount</td>
@@ -39,7 +39,7 @@
   <tr>
     <td>MaxCountUnits</td>
     <td>The units for the max count (minutes or epochs).</td>
-    <td><a href="../elements/boutUnits.md">Units</a></td>
+    <td><a href="boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>SpikeTolerance</td>
@@ -49,7 +49,7 @@
   <tr>
     <td>SpikeToleranceUnits</td>
     <td>The units for the spike tolerance (minutes or epochs).</td>
-    <td><a href="../elements/boutUnits.md">Units</a></td>
+    <td><a href="boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseCountsToStopNonWearPeriod</td>
@@ -64,7 +64,7 @@
   <tr>
     <td>CountsToStopNonWearPeriodUnits</td>
     <td>The units for the counts to stop a non-wear period (minutes or epochs)</td>
-    <td><a href="../elements/boutUnits.md">Units</a></td>
+    <td><a href="boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseConsecutiveEpochs</td>
@@ -94,7 +94,7 @@
   <tr>
     <td>ShortWearPeriodsUnits</td>
     <td>The units for the short wear periods (minutes or epochs)</td>
-    <td><a href="../elements/boutUnits.md">Units</a></td>
+    <td><a href="boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseMinimumWearTimePerDay</td>
@@ -109,7 +109,7 @@
   <tr>
     <td>MinimumWearTimePerDayUnits</td>
     <td>The units for the minimum wear time per day (minutes or epochs).</td>
-    <td><a href="../elements/boutUnits.md">Units</a></td>
+    <td><a href="boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseMinimumDaysOfValidWearTime</td>
@@ -124,7 +124,7 @@
   <tr>
     <td>Sleep</td>
     <td>Controls if sleep periods should be used in this bout setting.</td>
-	<td><a href="../elements/SleepPeriodWTVOption.md">SleepPeriodWTVOption</a></td>
+	<td><a href="sleepPeriodWtvOption.md">SleepPeriodWTVOption</a></td>
   </tr>
 </table>
 

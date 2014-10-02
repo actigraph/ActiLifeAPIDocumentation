@@ -39,7 +39,7 @@
   <tr>
     <td>ShortWearPeriodsUnits</td>
     <td>The units for the short wear periods (minutes or epochs)</td>
-    <td><a href="../elements/boutUnits.md">Units</a></td>
+    <td><a href="boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseMinimumWearTimePerDay</td>
@@ -54,7 +54,7 @@
   <tr>
     <td>MinimumWearTimePerDayUnits</td>
     <td>The units for the minimum wear time per day (minutes or epochs).</td>
-    <td><a href="../elements/boutUnits.md">Units</a></td>
+    <td><a href="boutUnits.md">Units</a></td>
   </tr>
   <tr>
     <td>UseMinimumDaysOfValidWearTime</td>
@@ -69,6 +69,6 @@
   <tr>
     <td>Sleep</td>
     <td>Controls if sleep periods should be used in this bout setting.</td>
-	<td><a href="../elements/SleepPeriodWTVOption.md">SleepPeriodWTVOption</a></td>
+	<td><a href="sleepPeriodWtvOption.md">SleepPeriodWTVOption</a></td>
   </tr>
 </table>
