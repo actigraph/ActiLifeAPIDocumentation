@@ -29,7 +29,6 @@ Calculate wear time validation results for a single AGD file.
         <ul>
             <li>Troiano</li>
             <li>Choi</li>
-            <li>Daily</li>
 		</ul>
     </td>
     <td>Yes</td>
@@ -46,13 +45,7 @@ Calculate wear time validation results for a single AGD file.
     <td>Options for calculating Choi wear time validation results.</td>
     <td>No</td>
     <td>JSON</td>
-  </tr> 
-  <tr>
-    <td><a href="../elements/dailyWTVOptions.md">DailyWTVOptions</a></td>
-    <td>Options for calculating ActiGraph Daily wear time validation results.</td>
-    <td>No</td>
-    <td>JSON</td>
-  </tr> 
+  </tr>
 </table>
 
 ### Example Action
