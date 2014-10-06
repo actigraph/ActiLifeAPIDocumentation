@@ -65,6 +65,7 @@ Actions are sent to ActiLife to instruct it to either do something or return dat
 * [APIVersion [API 1.4]](actions/apiversion.md)
 * [ChangeWearTimeValidationPeriod [API 1.11]](actions/changewtvperiod.md)
 * [ConvertFile [API 1.9]](actions/convertfile.md)
+* [CreateClinicalReport [API 1.11]](actions/createclinicalreport.md)
 * [DataScoring [API 1.10]](actions/datascoring.md)
 * [NHANESWTV [API 1.7]](actions/nhaneswtv.md)
 * [USBDownload [API 1.2]](actions/usbdownload.md)
