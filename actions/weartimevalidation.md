@@ -35,13 +35,13 @@ Calculate wear time validation results for a single AGD file.
     <td>string</td>
   </tr>
   <tr>
-    <td><a href="../elements/troianoWTVOptions.md">TroianoWTVOptions</a></td>
+    <td><a href="../elements/troianoWTVOptions.md">TroianoOptions</a></td>
     <td>Options for calculating Troiano wear time validation results.</td>
     <td>No</td>
     <td>JSON</td>
   </tr>
   <tr>
-    <td><a href="../elements/choiWTVOptions.md">ChoiWTVOptions</a></td>
+    <td><a href="../elements/choiWTVOptions.md">ChoiOptions</a></td>
     <td>Options for calculating Choi wear time validation results.</td>
     <td>No</td>
     <td>JSON</td>
