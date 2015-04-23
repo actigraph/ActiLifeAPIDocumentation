@@ -243,3 +243,71 @@ Calculate wear time validation results for a single AGD file.
   }
 }
 ```
+
+### Default Troiano Options in full JSON form
+```json
+{  
+    "Action":"WearTimeValidation",
+    "Args":{  
+        "FileInputPath":"c:\\users\\john.doe\\Desktop\\HKAtlanta.agd",
+        "Algorithm":"Troiano",
+        "TroianoOptions":{  
+            "Algorithm":0,
+            "MinimumLengthUnits":0,
+            "UseActivityThreshold":false,
+            "ActivityThreshold":0,
+            "ActivityThresholdUnits":0,
+            "UseMaxCount":false,
+            "MaxCount":0,
+            "MaxCountUnits":0,
+            "SpikeTolerance":2,
+            "SpikeToleranceUnits":0,
+            "UseCountsToStopNonWearPeriod":true,
+            "CountsToStopNonWearPeriod":100,
+            "CountsToStopNonWearPeriodUnits":0,
+            "UseConsecutiveEpochs":true,
+            "AutoSleepScoringRequireStartEndZeros":false,
+            "AutoSleepScoringStartEpochsToBeZero":0,
+            "AutoSleepScoringEndpochsToBeZero":0,
+            "MinimumLength":60,
+            "VM":false,
+            "UseIgnoreShortWearPeriods":false,
+            "ShortWearPeriodsLength":0,
+            "ShortWearPeriodsUnits":0,
+            "UseMinimumWearTimePerDay":false,
+            "MinimumWearTimePerDayLength":0,
+            "MinimumWearTimePerDayUnits":0,
+            "MinimumDaysOfValidWearTime":0,            
+            "Sleep":0,
+            "UseWearSenseData":true
+        }
+    }
+}
+```
+
+### Default Choi Options in full JSON form
+```json
+{  
+    "Action":"WearTimeValidation",
+    "Args":{  
+        "FileInputPath":"c:\\users\\john.doe\\Desktop\\HKAtlanta.agd",
+        "Algorithm":"Choi",
+        "ChoiOptions":{  
+            "Algorithm":1,
+            "SmallWindow":30,
+            "SpikeTolerance":2,
+            "MinimumLength":90,
+            "VM":false,
+            "UseIgnoreShortWearPeriods":false,
+            "ShortWearPeriodsLength":0,
+            "ShortWearPeriodsUnits":0,
+            "UseMinimumWearTimePerDay":false,
+            "MinimumWearTimePerDayLength":0,
+            "MinimumWearTimePerDayUnits":0,
+            "MinimumDaysOfValidWearTime":0,
+            "Sleep":0,
+            "UseWearSenseData":true
+        }
+    }
+}
+```
