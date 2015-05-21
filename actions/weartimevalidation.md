@@ -2,6 +2,25 @@
 
 Calculate wear time validation results for a single AGD file.
 
+### Changelog
+In 1.12 of the API, more results were added. It now includes the same information returned by the wear time validation tab in ActiLife. This includes:
+* WearPeriods
+* NonWearPeriods
+* TotalDatasetLength
+* WearLength
+* NonWearLength
+* WearLengthAverage
+* NonWearLengthAverage
+* WearPercentage
+* NonWearPercentage
+* WearTimePerDayAverage
+* NonWearTimePerDayAverage
+* WearTimePerDayWithWearTimeAverage
+* NonWearTimePerDayWithWearTimeAverage
+* DaysWithWearTime
+* WeekDaysWithWearTime
+* WeekendDaysWithWearTime
+
 ## Action
 
 <table>
@@ -72,7 +91,27 @@ Calculate wear time validation results for a single AGD file.
     "Algorithm": "Choi"
   },
   "Payload": {
-    "filename": "c:\\users\\john.doe\\Desktop\\file.agd",
+    "Filename": "c:\\users\\john.doe\\Desktop\\file.agd",
+    "SubjectName": "john doe",
+    "SerialNumber": "MID2A14099956",
+    "SummaryStats": {
+      "WearPeriods": 3,
+      "NonWearPeriods": 2,
+      "TotalDatasetLength": 21263.0,
+      "WearLength": 19995.0,
+      "NonWearLength": 1268.0,
+      "WearLengthAverage": 6665.0,
+      "NonWearLengthAverage": 634.0,
+      "WearPercentage": 94.036589380614217,
+      "NonWearPercentage": 5.9634106193857876,
+      "WearTimePerDayAverage": 1250.0,
+      "NonWearTimePerDayAverage": 79.0,
+      "WearTimePerDayWithWearTimeAverage": 1250.0,
+      "NonWearTimePerDayWithWearTimeAverage": 79.0,
+      "DaysWithWearTime": 16,
+      "WeekDaysWithWearTime": 12,
+      "WeekendDaysWithWearTime": 4
+    },
     "Periods": [
       {
         "CalendarDays": 4,
