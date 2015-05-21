@@ -67,6 +67,7 @@ Actions are sent to ActiLife to instruct it to either do something or return dat
 * [ConvertFile [API 1.9]](actions/convertfile.md)
 * [CreateClinicalReport [API 1.11]](actions/createclinicalreport.md)
 * [DataScoring [API 1.10]](actions/datascoring.md)
+* [DataScoringExport [API 1.12]](actions/datascoringexport.md)
 * [NHANESWTV [API 1.7]](actions/nhaneswtv.md)
 * [USBDownload [API 1.2]](actions/usbdownload.md)
 * [USBIdentify [API 1.5]](actions/usbidentify.md)
