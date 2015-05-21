@@ -27,4 +27,12 @@ Options for which filters to use for data scoring.
     <td>No</td>
     <td>bool</td>
   </tr>
+  <tr>
+    <td><a href="../elements/globalDateTimeFilterOptions.md">GlobalDateTimeFilterOptions</a></td>
+    <td>Options to use and enable global date/time filters.
+
+        Available in API version 1.12</td>
+    <td>No</td>
+    <td>JSON</td>
+  </tr>
 </table>
