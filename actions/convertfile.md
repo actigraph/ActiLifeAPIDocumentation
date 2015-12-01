@@ -17,6 +17,7 @@ Converts a file from one file format and epoch length to another.
         <p>Accepted Input Formats:</p>
         <ul>
             <li>gt3x</li>
+            <li>agd</li>
         </ul>
     </td>
     <td>Yes</td>
@@ -37,6 +38,7 @@ Converts a file from one file format and epoch length to another.
         <ul>
             <li>"rawcsv" (can provide <a href="../elements/csvoptions.md">CSVOptions</a>)</li>
 			<li>"agd" (can provide <a href="../elements/agdoptions.md">AGDOptions</a>)</li>
+            <li>"epochcsv" [API 1.13] (can provide <a href="../elements/csvoptions.md">CSVOptions</a>)</li>
         </ul>
     </td>
     <td>Yes</td>
