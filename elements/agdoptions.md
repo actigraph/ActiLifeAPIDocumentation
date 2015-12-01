@@ -11,7 +11,15 @@ Describes what data should be included in the downloaded AGD file.
   </tr>
   <tr>
     <td>Axis</td>
-    <td>Number of axis to include in AGD. Must be at least 1 Axis to create an AGD!</td>
+    <td>
+    	Number of axis to include in AGD. Must be at least 1 Axis to create an AGD!
+        <p>Accepted values:</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </td>
     <td>Yes</td>
     <td>int</td>
   </tr>
